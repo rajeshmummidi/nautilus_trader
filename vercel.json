@@ -1,5 +1,0 @@
-{
-  "buildCommand": "python -m pip install markdown && python scripts/build_readme_site.py",
-  "outputDirectory": "site",
-  "framework": null
-}
