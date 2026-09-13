@@ -14,7 +14,19 @@ strategy_markdown = """# Indian Market Strategy
 
 ## NIFTY 50 daily trend research
 
-This page defines a **backtest-only** starting point for Indian market research. It is not investment advice and it does not connect to NSE, place orders, or handle broker credentials.
+This page contains an executable **backtest-only** simulation for Indian market research. It is not investment advice and it does not connect to NSE, place orders, or handle broker credentials.
+
+### Run the simulation
+
+From the repository root, using the project environment:
+
+```text
+python examples/backtest/indian_market_ema_simulation.py
+```
+
+The implementation is in `examples/backtest/indian_market_ema_simulation.py`. It uses NautilusTrader's `BacktestEngine`, a simulated venue, INR cash, deterministic weekday bars, a fixed INR 20 commission, and no network calls.
+
+The current reproducible run produced 6 simulated orders, 3 positions, and INR 1,042.00 total PnL. These results are illustrative synthetic-data output, not a forecast or a live-trading result.
 
 ### Rules
 
